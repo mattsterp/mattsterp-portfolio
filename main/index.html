@@ -51,7 +51,7 @@
   <section class="hero padding-y-xxl" style="background-image: url('./assets/img/example.png');">
     <div class="container max-width-adaptive-lg">
       <div class="hero__content max-width-xs">
-        <div class="hero__label margin-bottom-xxs">Talk to me about cross platform app development</div>
+        <div class="hero__label margin-bottom-xxs">Talk to me about cross platform web and app development</div>
   
         <div class="text-component margin-bottom-sm">
           <h1>Matthew Peters</h1>
@@ -65,6 +65,74 @@
       </div>
     </div>
   </section>
+  <!-- https://codyhouse.co/ds/components/info/form-example -->
+  <form>
+    <fieldset class="margin-bottom-md">
+      <legend class="form-legend">Form Legend</legend>
+  
+      <div class="margin-bottom-sm">
+        <div class="grid grid-gap-sm">
+          <div class="col-6@md">
+            <label class="form-label margin-bottom-xxs" for="inputName">Name</label>
+            <input class="form-control width-100%" type="text" name="inputName" id="inputName" required>
+          </div>
+      
+          <div class="col-6@md">
+            <label class="form-label margin-bottom-xxs" for="inputEmail">Email</label>
+            <input class="form-control width-100%" type="email" name="inputEmail" id="inputEmail" placeholder="email@myemail.com">
+          </div>
+        </div>
+      </div>
+  
+      <div class="margin-bottom-sm">
+        <label class="form-label margin-bottom-xxs" for="inputInvalid">Invalid</label>
+        <input class="form-control width-100%" type="text" name="inputInvalid" id="inputInvalid" aria-invalid="true" value="invalid data">
+        <div role="alert" class="form-error-msg form-error-msg--is-visible"><p><strong>Error:</strong> this is an error message</p></div>
+      </div>
+  
+      <div>
+        <label class="form-label margin-bottom-xxs" for="textarea">Textarea</label>
+        <textarea class="form-control width-100%" name="textarea" id="textarea"></textarea>
+        <p class="text-xs color-contrast-medium margin-top-xxs">Use helper text to provide additional information.</p>
+      </div>
+    </fieldset>
+  
+    <fieldset class="margin-bottom-md">
+      <legend class="form-legend">Radio Buttons</legend>
+  
+      <ul class="radio-list flex flex-column flex-gap-xxxs">
+        <li>
+          <input class="radio" type="radio" name="radioButton" id="radio1" checked>
+          <label for="radio1">Choice 1</label>
+        </li>
+  
+        <li>
+          <input class="radio" type="radio" name="radioButton" id="radio2">
+          <label for="radio2">Choice 2</label>
+        </li>
+      </ul>
+    </fieldset>
+  
+    <fieldset class="margin-bottom-md">
+      <legend class="form-legend">Checkboxes</legend>
+  
+      <div class="checkbox-list flex flex-wrap flex-gap-md">
+        <div>
+          <input class="checkbox" type="checkbox" id="checkbox1">
+          <label for="checkbox1">Option 1</label>
+        </div>
+  
+        <div>
+          <input class="checkbox" type="checkbox" id="checkbox2">
+          <label for="checkbox2">Option 2</label>
+        </div>
+      </div>
+    </fieldset>
+  
+    <div>
+      <button class="btn btn--primary">Submit</button>
+    </div>
+  </form>
   <!-- https://codyhouse.co/ds/components/app/main-footer -->
   <footer class="main-footer padding-y-lg">
     <div class="container max-width-lg">
